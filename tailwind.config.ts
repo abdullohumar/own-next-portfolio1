@@ -15,6 +15,16 @@ export default {
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'], 
       },
+      animation:{
+        'spin-slow': 'spin 3s linear infinite',
+        'spin-slow-reverse': 'reverse-spin 3s linear infinite',
+      },
+      keyframes: {
+        'reverse-spin': {
+          from: { transform: 'rotate(0deg)' },
+          to: { transform: 'rotate(-360deg)' } 
+        }
+      },
     },
   },
   plugins: [],
