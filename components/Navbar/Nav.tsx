@@ -12,7 +12,7 @@ type Props = {
 
 const Nav = ({ openNav, isOpen }: Props) => {
     return (
-        <nav className='w-full h-[9vh] bg-gray-800 z-50 relative'>
+        <nav className='w-full h-[9vh] z-50 fixed'>
             <div className='w-[90%] lg:w-[80%] flex items-center justify-between h-full mx-auto '>
                 {/* Logo */}
                 <Link href={''}>
@@ -22,7 +22,7 @@ const Nav = ({ openNav, isOpen }: Props) => {
                     </div>
                 </Link>
                 {/* Links */}
-                <div className='hidden md:flex space-x-7 justify-center items-center'>
+                <div className='hidden md:flex space-x-7 justify-center items-center lg:mx-auto'>
                     {navLinks.map((link) => (
                         <Link key={link.id} href={link.url} className='relative group'>
                             <p className='text-white font-semibold text-[15px] font-montserrat after:content-[""] after:absolute after:bg-yellow-500 after:h-[3px] after:w-full after:block after:rounded-full after:scale-x-0 after:hover:scale-x-100 after:transition after:origin-left duration-300'>{link.label}</p>

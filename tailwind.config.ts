@@ -25,6 +25,10 @@ export default {
           to: { transform: 'rotate(-360deg)' } 
         }
       },
+      backgroundImage: {
+        "hero-bg-lg": "linear-gradient(70deg, #eab308 50%, #000000 50%)",
+        "hero-bg-md": "linear-gradient(45deg, #eab308 50%, #000000 50%)",
+      },
     },
   },
   plugins: [],
